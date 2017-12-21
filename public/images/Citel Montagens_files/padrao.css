@@ -1,0 +1,84 @@
+/* CSS Document */
+
+body {
+	margin: 0px;
+	background-color:#940203;
+	background-image:url(../images/bgCabecalho.jpg); 
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#tarja {
+	width:456px;
+	height:40px;
+}
+
+#tblMenu {
+	width:403px;
+	float:left;
+	height:313px;
+	text-align:right;
+}
+
+#tblCab {
+	width:375px;
+	float:right;
+	height:313px;
+}
+
+.TH11E4BB80 {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #E4BB80;
+}
+
+.TH10E4BB80 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #E4BB80;
+}
+
+.TH11FFFFFF {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+.TH10FFFFFF {
+	font-family: tahoma;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+.TH11FFCC00 {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FFCC00;
+}
+
+.AR05940203 {
+	font-family: arial;
+	font-size: 5px;
+	color: #940203;
+}
+
+
+
+.bordaEmFoto {
+	border: 2px solid #CA0202;
+}
+
+
+.frm {
+     font-family: tahoma;
+     font-size: 11px;
+     color: #444444;
+     background-color: #FFFFFF;
+     border:1px;
+     border-top-style: solid;
+     border-right-style: solid;
+     border-bottom-style: solid;
+     border-left-style: solid;
+     padding-left:5px;
+     height: 17px;
+}

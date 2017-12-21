@@ -1,0 +1,86 @@
+function abrePopUp(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+
+
+function apenasNumero(e)
+{
+	var key = window.event ? e.keyCode : e.which;
+	var keychar = String.fromCharCode(key);
+	if ((key == 0) || (key == 8)) {
+		return true
+	}
+	else {
+		reg = /\d/;
+		return reg.test(keychar);
+	}  
+}
+
+
+function formataFone(obj, e){
+
+    var tecla = e.keyCode;
+    if (tecla == 8) {
+	    return true;
+    }
+    else {
+	    var retorno = apenasNumero(e);
+	    if (retorno) {
+		    if (obj.value.length==1) {
+			    obj.value = "(" + obj.value;
+		    }
+		    if (obj.value.length==3) {
+			    obj.value = obj.value + ") ";
+		    }
+		    if (obj.value.length==9) {
+			    obj.value = obj.value + "-";
+		    }
+	    }
+	return retorno;
+    }
+}
+
+function formataCep(obj, e)
+{
+	var tecla = e.keyCode;
+	if (tecla == 8)
+	{ 
+		return true;
+	}
+	else
+	{ 
+		var retorno = apenasNumero(e);
+		if (retorno)
+		{
+			if (obj.value.length==5)
+			{
+				obj.value = obj.value + "-";
+			}
+		}
+		return retorno;
+	}
+}
+
+
+function formataDataNasc(obj, e)
+{
+	var tecla = e.keyCode;
+	if (tecla == 8)
+	{ 
+		return true;
+	}
+	else
+	{ 
+		var retorno = apenasNumero(e);
+		if (retorno)
+		{
+			if (obj.value.length==2)
+			{
+				obj.value = obj.value + "/";
+			}
+		}
+		return retorno;
+	}
+}
+
